@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juliarman.appqrcodegenerator.MainActivity">
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/NmProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text=" "
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Nama Produk"
+                >
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/IdProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:inputType="number"
+                android:text=" "
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="ID Produk"
+                >
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/HrgProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:inputType="number"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Harga"
+                android:text=" "
+                >
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/desc_produk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Deskripsi"
+                android:text=" "
+                >
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                        <com.dd.processbutton.iml.SubmitProcessButton
+                            android:id="@+id/btn_clear"
+                            android:layout_weight="1"
+                            android:text="Clear"
+                            android:textColor="#fff"
+                            android:layout_margin="5dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.dd.processbutton.iml.SubmitProcessButton>
+
+                        <com.dd.processbutton.iml.SubmitProcessButton
+                            android:id="@+id/btn_proses"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:layout_width="fill_parent"
+                            android:text="Proses"
+                            android:textColor="#fff"
+                            app:pb_colorNormal="@color/btn_normal"
+                            app:pb_colorPressed="@color/btn_pressed"
+                            android:layout_height="wrap_content">
+                        </com.dd.processbutton.iml.SubmitProcessButton>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/imgbarcode"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_weight="3"
+                   android:src="?attr/actionBarDivider" />
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/txtnm"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:layout_weight="1"
+                       android:text="Nama Produk" />
+
+                   <TextView
+                       android:id="@+id/txtid"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:layout_weight="1"
+                       android:text="ID Produk" />
+
+                   <TextView
+                       android:id="@+id/txthrg"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:layout_weight="1"
+                       android:text="Harga :" />
+
+                   <TextView
+                       android:id="@+id/txtdesc"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:layout_weight="1"
+                       android:text="Deskripsi :" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
